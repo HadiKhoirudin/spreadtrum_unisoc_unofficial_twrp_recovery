@@ -1,7 +1,7 @@
 # Spreadtrum Unisoc Unofficial TWRP Recovery
 # TWRP Version 3.0.2
 
-This is unofficial TWRP Ramdisk Ported to Advan S4P, S4T, S4X OS 4.4.4 Kitkat and 5.0 Lollipop since 2017th for any SC8830 Board Platform.
+This is unofficial TWRP Ramdisk Ported by me for Advan S4P, S4T, S4X OS 4.4.4 Kitkat and 5.0 Lollipop since 2017th for any SC8830 Board Platform.
 
 Use Android Image Kitchen from XDA to unpack your recovery.img then replace necessaries ramdisk files from this repositories.
 
