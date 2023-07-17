@@ -1,0 +1,23 @@
+/boot		emmc   /dev/block/mmcblk0p16   flags=backup=1;display="Boot IMG"
+/logo		emmc   /dev/block/mmcblk0p14   flags=backup=1;display="Boot Logo"
+/fbootlogo	emmc   /dev/block/mmcblk0p15   flags=backup=1;subpartitionof=/logo
+/cache		ext4   /dev/block/mmcblk0p18   flags=backup=1;display="Cache"
+/data		ext4   /dev/block/mmcblk0p21   length=-16384
+/wfixnv1	emmc   /dev/block/mmcblk0p5   flags=backup=1;display="IMEI Part"
+/wfixnv2	emmc   /dev/block/mmcblk0p6   flags=backup=1;subpartitionof=/wfixnv1
+/wruntimenv1	emmc   /dev/block/mmcblk0p7   flags=backup=1;subpartitionof=/wfixnv1
+/wruntimenv2	emmc   /dev/block/mmcblk0p8   flags=backup=1;subpartitionof=/wfixnv1
+/productinfo	emmc   /dev/block/mmcblk0p1   flags=backup=1;subpartitionof=/wfixnv1
+/wcnfixnv1	emmc   /dev/block/mmcblk0p10   flags=backup=1;subpartitionof=/wfixnv1
+/wcnfixnv2	emmc   /dev/block/mmcblk0p11   flags=backup=1;subpartitionof=/wfixnv1
+/wcnruntimenv1	emmc   /dev/block/mmcblk0p12   flags=backup=1;subpartitionof=/wfixnv1
+/wcnruntimenv2	emmc   /dev/block/mmcblk0p13   flags=backup=1;subpartitionof=/wfixnv1
+/misc	emmc   /dev/block/mmcblk0p20   flags=backup=1;display="Misc"
+/miscdata	emmc   /dev/block/mmcblk0p2   flags=backup=1;subpartitionof=/misc
+/wdsp	emmc   /dev/block/mmcblk0p4   flags=backup=1;display="Modem Part"
+/wmodem	emmc   /dev/block/mmcblk0p3   flags=backup=1;subpartitionof=/wdsp
+/wcnmodem	emmc   /dev/block/mmcblk0p9   flags=backup=1;subpartitionof=/wdsp
+/recovery	emmc   /dev/block/mmcblk0p19   flags=backup=1;display="Recovery IMG"
+/st.internal.sd	vfat   /dev/block/mmcblk0p22   flags=display="Internal SDcard";storage;removable;wipeingui
+/st.mirco.sd	vfat   /dev/block/mmcblk1p1   flags=display="Micro SD";storage;removable
+/system		ext4   /dev/block/mmcblk0p17   flags=backup=1;display="System"
